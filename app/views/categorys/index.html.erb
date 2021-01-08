@@ -1,0 +1,9 @@
+<h1 style="color:Fuchsia;"><font face="Copperplate"><font size="+5">Categories</font></h1>
+<hr><br>
+<font face="Brush Script MT"><font size="+1">
+<% @categorys.each do |category| %>
+    <%= link_to category.name, category_path(category) %><br><br>
+<% end %>
+</font><br>
+
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQv9ll45y3erYdB4Rzi6qauTR_3dMMvbs1eXQ&usqp=CAU" alt="Smiley face" width="400" height="300" style="vertical-align:middle;margin:50px 0px">

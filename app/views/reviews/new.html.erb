@@ -1,0 +1,17 @@
+
+<h1 style="color:Fuchsia;"><font face="Copperplate"><font size="+5">Create A Review!</font></h1>
+<hr><br>
+<font face="Brush Script MT">
+
+<%= form_for @review do |f| %>
+    User: <%= f.collection_select :user_id, User.all, :id, :name %><br><br>
+    Product: <%= f.collection_select :product_id, Product.all, :id, :name %><br><br>
+    Rating: <%= f.text_field :rating%><br><br>
+    Title: <%=f.text_field :title%><br><br>
+    Post: <%=f.text_area :post%> <br><br>
+    <%= f.submit %>
+    <% end %>
+
+    </font><br>
+
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsZFtdrlfxZKaYih2cofkTTTX8TSjBaUJqyg&usqp=CAU" class="img-fluid" alt="...">

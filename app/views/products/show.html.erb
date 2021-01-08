@@ -1,0 +1,18 @@
+
+<h1 style="color:Fuchsia;"><font face="Copperplate"><font size="+5">Product</font></h1>
+<hr><br>
+
+
+<font face="Brush Script MT"><font size="+1">
+Name: <%= @product.name %><br><br>
+Brand: <%= @product.brand %><br><br>
+Price: <%= @product.price%><br><br>
+Category: <%= link_to @product.category.name, category_path(@product.category.id)%><br><br>
+Reviews: <% @product.reviews.each do |review| %><br>
+    <%=link_to review.title, review %><br>
+    <%end %><br><br>
+</font><br>
+
+<img src="https://www.clipartkey.com/mpngs/m/67-674816_sparkle-glitter-kiss-lips-colorful-rainbow-pink-lips.png" alt="Smiley face" width="400" height="300" style="vertical-align:middle;margin:50px 0px">
+
+

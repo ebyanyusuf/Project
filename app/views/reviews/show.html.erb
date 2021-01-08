@@ -1,0 +1,20 @@
+
+
+
+
+<h1 style="color:Fuchsia;"><font face="Copperplate"><font size="+5">Review</font></h1>
+<hr><br>
+
+<font face="Brush Script MT">
+<h1 style="color:Fuchsia;"><b>User: <%= link_to @review.user.name, user_path(@review.user)%></b><br><br></h1>
+Product Brand: <%= link_to @review.product.brand, product_path(@review.product)%><br><br>
+Product Name: <%= link_to @review.product.name, product_path(@review.product)%><br><br>
+Rating: <%= @review.rating %><br><br>
+Title: <%= @review.title %><br><br>
+Post: <%= @review.post %><br><br>
+<%= button_to "Delete Review", @review, method: :delete %><br><br>
+</font><br>
+
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsZFtdrlfxZKaYih2cofkTTTX8TSjBaUJqyg&usqp=CAU" class="img-fluid" alt="...">
+
+

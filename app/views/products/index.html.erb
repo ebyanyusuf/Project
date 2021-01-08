@@ -1,0 +1,13 @@
+<body class="<%= @home_page ? 'homepage' : 'background-color: #000'%>">
+
+<h1 style="color:Fuchsia;"><font face="Copperplate"><font size="+2">Products</font></h1>
+<hr><br>
+<font face="Brush Script MT">
+<% @products.each do |product| %>
+    <%= link_to product.name, product %><br><br>
+<% end %>
+</font><br>
+
+
+
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3OLhYrOibgeS0tjAu9rWOkR17lpL8MbR-rg&usqp=CAU" alt="Smiley face" width="400" height="300" style="vertical-align:middle;margin:50px 0px">

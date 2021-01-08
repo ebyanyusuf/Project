@@ -1,0 +1,14 @@
+<h1 style="color:Fuchsia;"><font face="Copperplate"><font size="+5">Reviews</font></h1>
+<hr><br>
+
+<font face="Brush Script MT">
+<% @reviews.each do |review| %>
+    <%= link_to review.product.name, review %><br><br>
+<% end %>
+
+<h1><font face="Brush Script MT"> Highest Ratings: </font></h1>
+<% @reviews.featured_review.each do |review| %>
+<%= link_to review %><br><br>
+<% end %>
+</font><br>
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsZFtdrlfxZKaYih2cofkTTTX8TSjBaUJqyg&usqp=CAU" class="img-fluid" alt="...">
