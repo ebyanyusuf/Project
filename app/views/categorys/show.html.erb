@@ -2,7 +2,7 @@
 <h1 style="color:Fuchsia;"><font face="Copperplate"><font size="+5"><%= @category.name %> Products</font></h1>
 <hr><br>
 
-<font face="Brush Script MT"><font size="+1">
+<font face="Copperplate"><font size="+1">
 <% @category.products.each do |product| %>
     <%= link_to product.name, product_path(product) %><br><br>
 <% end %>

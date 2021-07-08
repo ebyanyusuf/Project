@@ -13,8 +13,15 @@ class UsersController < ApplicationController
     end
 
     def create 
-        @user = User.create(user_params)
-        redirect_to @user
+        @user = User.new(user_params)
+        
+        if @user.valid?
+            @user.save
+            User.create(user_params)
+            redirect_to @user
+        else 
+            render :new  
+        end
     end
 
     def destroy 

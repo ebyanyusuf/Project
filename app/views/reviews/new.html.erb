@@ -1,7 +1,7 @@
 
-<h1 style="color:Fuchsia;"><font face="Copperplate"><font size="+5">Create A Review!</font></h1>
-<hr><br>
-<font face="Brush Script MT">
+<h1 style="color:Black;"><font face="Copperplate"><font size="+5">Create A Review!</font></h1>
+<br>
+<font face="Copperplate">
 
 <%= form_for @review do |f| %>
     User: <%= f.collection_select :user_id, User.all, :id, :name %><br><br>

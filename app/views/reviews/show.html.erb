@@ -2,11 +2,11 @@
 
 
 
-<h1 style="color:Fuchsia;"><font face="Copperplate"><font size="+5">Review</font></h1>
-<hr><br>
+<h1 style="color:Black;"><font face="Copperplate"><font size="+5">Review</font></h1>
+<br>
 
-<font face="Brush Script MT">
-<h1 style="color:Fuchsia;"><b>User: <%= link_to @review.user.name, user_path(@review.user)%></b><br><br></h1>
+<font face="Copperplate">
+<h2 style="color:Fuchsia;"><b>User: <%= link_to @review.user.name, user_path(@review.user)%></b><br><br></h2>
 Product Brand: <%= link_to @review.product.brand, product_path(@review.product)%><br><br>
 Product Name: <%= link_to @review.product.name, product_path(@review.product)%><br><br>
 Rating: <%= @review.rating %><br><br>

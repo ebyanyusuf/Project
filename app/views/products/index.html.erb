@@ -1,8 +1,8 @@
 <body class="<%= @home_page ? 'homepage' : 'background-color: #000'%>">
 
-<h1 style="color:Fuchsia;"><font face="Copperplate"><font size="+2">Products</font></h1>
-<hr><br>
-<font face="Brush Script MT">
+<h1 style="color:Black;"><font face="Copperplate"><font size="+2">Products</font></h1>
+<br>
+<font face="Copperplate">
 <% @products.each do |product| %>
     <%= link_to product.name, product %><br><br>
 <% end %>

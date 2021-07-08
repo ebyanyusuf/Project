@@ -37,7 +37,7 @@ product15 = Product.create(name: "Sleek and Shine", brand: "Garnier", price: 8)
 product16 = Product.create(name: "Beachy Waves", brand: "Suave", price: 10)
 product17 = Product.create(name: "Smoky Eye", brand: "Covergirl", price: 20)
 product18 = Product.create(name: "Cat Eye", brand: "Revlon", price: 20)
-product19 = Product.create(name: "Runway Eye", brand: "Maybelline", price: 20)
+
 product20 = Product.create(name: "Dream Lash", brand: "Maybelline", price: 20)
 product21 = Product.create(name: "Dream Mousse", brand: "CoverGirl", price: 30)
 product22 = Product.create(name: "Skin Clear", brand: "Clean & Clear", price: 10)

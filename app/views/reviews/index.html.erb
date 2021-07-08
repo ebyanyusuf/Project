@@ -1,12 +1,12 @@
-<h1 style="color:Fuchsia;"><font face="Copperplate"><font size="+5">Reviews</font></h1>
-<hr><br>
+<h1 style="color:Black;"><font face="Copperplate"><font size="+5">Reviews</font></h1>
+<br>
 
-<font face="Brush Script MT">
+<font face="Copperplate">
 <% @reviews.each do |review| %>
     <%= link_to review.product.name, review %><br><br>
 <% end %>
 
-<h1><font face="Brush Script MT"> Highest Ratings: </font></h1>
+<h1><font face="Copperplate"> Highest Ratings: </font></h1>
 <% @reviews.featured_review.each do |review| %>
 <%= link_to review %><br><br>
 <% end %>
